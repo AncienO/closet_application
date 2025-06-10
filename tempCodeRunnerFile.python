@@ -1,0 +1,11 @@
+def finobacci(n):
+    valueList = [0,1]
+    while True:
+        nextValue = valueList[-1]+ valueList[-2]
+        valueList.append(nextValue)
+        if nextValue >= n:
+            break
+    return valueList
+
+print(finobacci(22)
+      )
