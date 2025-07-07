@@ -18,16 +18,16 @@ export default function App() {
     //<LoginScreen/>
     //<SignUpScreen/>
 
-    <NavigationContainer>
-      <BottomTabNavigator/>
-    </NavigationContainer>
-
     // <NavigationContainer>
-    //   <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="SignUp">
-    //     <Stack.Screen name="SignUp" component={SignUpScreen} />
-    //     <Stack.Screen name="Signin" component={LoginScreen} />
-    //   </Stack.Navigator>
+    //   <BottomTabNavigator/>
     // </NavigationContainer>
+
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="SignUp">
+        <Stack.Screen name="SignUp" component={SignUpScreen} />
+        <Stack.Screen name="Signin" component={LoginScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
 
   );
 }
